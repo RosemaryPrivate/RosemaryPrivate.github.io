@@ -205,44 +205,350 @@ fieldset{border:0;padding:0}button{all:unset;cursor:pointer}pre{font-family:"Sou
 </head>
 <body>
 <div class="markdown-body">
-<div class="markdown-body"><h2 id="ingredients">Ingredients</h2>
-<h3 id="per-batch">Per batch</h3>
-<p>Price / Amount  - Item</p>
-<p>£8.75 / 35g     - Rosemary</p>
-<p>£0.26 / 1       - Egg</p>
-<p>£0.15 / 1 tsp   - Vanilla extract</p>
-<p>£0.02 / 1/2 tsp - Bicarbonate of soda</p>
-<p>£0.09 / 180g    - Flour</p>
-<p>£0.30 / 120g    - Butter</p>
-<p>£0.26 / 75g     - Light brown sugar</p>
-<p>£0.20 / 75g     - Golden caster sugar</p>
-<p>£0.7 / 50g     - Chocolate chips</p>
-<p><strong>Price per batch: £10.73 (£1.98 Excluding rosemary)</strong></p>
-<h3 id="per-shopping-trip">Per shopping trip</h3>
-<p>Price   / Amount  - Item</p>
-<p>£125    / 500g    - Rosemary</p>
-<p>£2.7    / 12      - <a href="https://www.tesco.com/groceries/en-GB/products/260298462">Eggs</a></p>
-<p>£1.15   / 38ml    - <a href="https://groceries.morrisons.com/products/morrisons-the-best-vanilla-flavouring-38ml/114404177">Vanilla extract</a></p>
-<p>£1.4    / 200g    - <a href="https://www.tesco.com/groceries/en-GB/products/282996938">Bicarbonate of soda</a></p>
-<p>£0.78   / 1.5kg   - <a href="https://groceries.morrisons.com/products/morrisons-self-raising-flour/107782938">Flour</a></p>
-<p>£1.11   / 450g    - <a href="https://groceries.morrisons.com/products/morrisons-perfectly-buttery/112858984">Butter</a></p>
-<p>£3.5    / 1kg     - <a href="https://www.tesco.com/groceries/en-GB/products/256775623">Light brown sugar</a></p>
-<p>£2.6    / 1kg     - <a href="https://www.tesco.com/groceries/en-GB/products/255089008">Golden caster sugar</a></p>
-<p>£1.4    / 100g    - <a href="https://groceries.morrisons.com/products/morrisons-dark-chocolate-chips-100g/105396072">Chocolate chips</a></p>
-<p><strong>Price per shopping trip: £139.64 (£14.64 Excluding rosemary)</strong></p>
-<h3 id="ingredient-usage-per-batch">Ingredient usage per batch</h3>
-<p>This is a bit complicated, its used to find out which ingredient will run out first and which one will run out first, an ingredient with 50% usage will run out after 2 batches, whereas 1% usage ill run after after 100 batches, running out means you have to go shop again for that specific ingredient.</p>
-<p>This means we should buy items which will run out fast in bulk and rarely those which last forever.</p>
-<p>Usage / Batches - Item</p>
-<p>7% / 14.3 - Rosemary</p>
-<p>8.33% / 12 - Eggs</p>
-<p>13.15% / 7.6 - Vanilla extract</p>
-<p>1.25% / 80 - Bicarbonate of soda</p>
-<p>12% / 8.3 - Flour</p>
-<p>26.66% / 3.75 - Butter</p>
-<p>7.5% / 13.33 - Light brown sugar</p>
-<p>7.5% / 13.33 - Golden caster sugar</p>
-<p>50% / 2 - Chocolate chips</p>
+<div class="markdown-body"><h1 id="%F0%9F%8D%AB-brownie-batch-optimization-report">🍫 Brownie Batch Optimization Report</h1>
+<hr>
+<h2 id="%F0%9F%A7%82-ingredients-overview">🧂 Ingredients Overview</h2>
+<h3 id="%F0%9F%94%B9-per-batch">🔹 Per Batch</h3>
+<figure class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Ingredient</th>
+<th>Quantity</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rosemary</td>
+<td>35g</td>
+<td>£8.75</td>
+</tr>
+<tr>
+<td>Egg</td>
+<td>1</td>
+<td>£0.26</td>
+</tr>
+<tr>
+<td>Vanilla extract</td>
+<td>1 tsp (~5ml)</td>
+<td>£0.15</td>
+</tr>
+<tr>
+<td>Bicarbonate of soda</td>
+<td>½ tsp (~2g)</td>
+<td>£0.02</td>
+</tr>
+<tr>
+<td>Flour</td>
+<td>180g</td>
+<td>£0.09</td>
+</tr>
+<tr>
+<td>Butter</td>
+<td>120g</td>
+<td>£0.30</td>
+</tr>
+<tr>
+<td>Light brown sugar</td>
+<td>75g</td>
+<td>£0.26</td>
+</tr>
+<tr>
+<td>Golden caster sugar</td>
+<td>75g</td>
+<td>£0.20</td>
+</tr>
+<tr>
+<td>Chocolate chips</td>
+<td>50g</td>
+<td>£0.70</td>
+</tr>
+</tbody>
+</table>
+</figure><p><strong>Total Cost per Batch: £10.73</strong></p>
+<p><strong>Excluding Rosemary: £1.98</strong></p>
+<hr>
+<h3 id="%F0%9F%94%B9-per-shopping-trip-(bulk)">🔹 Per Shopping Trip (Bulk)</h3>
+<figure class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Ingredient</th>
+<th>Bulk Size</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rosemary</td>
+<td>500g</td>
+<td>£125.00</td>
+</tr>
+<tr>
+<td><a href="https://www.tesco.com/groceries/en-GB/products/260298462">Eggs</a></td>
+<td>12 eggs</td>
+<td>£2.70</td>
+</tr>
+<tr>
+<td><a href="https://groceries.morrisons.com/products/morrisons-the-best-vanilla-flavouring-38ml/114404177">Vanilla extract</a></td>
+<td>38ml</td>
+<td>£1.15</td>
+</tr>
+<tr>
+<td><a href="https://www.tesco.com/groceries/en-GB/products/282996938">Bicarbonate of soda</a></td>
+<td>200g</td>
+<td>£1.40</td>
+</tr>
+<tr>
+<td><a href="https://groceries.morrisons.com/products/morrisons-self-raising-flour/107782938">Flour</a></td>
+<td>1.5kg</td>
+<td>£0.78</td>
+</tr>
+<tr>
+<td><a href="https://groceries.morrisons.com/products/morrisons-perfectly-buttery/112858984">Butter</a></td>
+<td>450g</td>
+<td>£1.11</td>
+</tr>
+<tr>
+<td><a href="https://www.tesco.com/groceries/en-GB/products/256775623">Light brown sugar</a></td>
+<td>1kg</td>
+<td>£3.50</td>
+</tr>
+<tr>
+<td><a href="https://www.tesco.com/groceries/en-GB/products/255089008">Golden caster sugar</a></td>
+<td>1kg</td>
+<td>£2.60</td>
+</tr>
+<tr>
+<td><a href="https://groceries.morrisons.com/products/morrisons-dark-chocolate-chips-100g/105396072">Chocolate chips</a></td>
+<td>100g</td>
+<td>£1.40</td>
+</tr>
+</tbody>
+</table>
+</figure><p><strong>Total Cost Per Shopping Trip: £139.64</strong></p>
+<p><strong>(£14.64 excluding rosemary)</strong></p>
+<hr>
+<h2 id="%F0%9F%93%89-ingredient-usage-per-batch">📉 Ingredient Usage Per Batch</h2>
+<p>This helps visualize which ingredients run out fastest:</p>
+<figure class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Ingredient</th>
+<th>% Used / Batch</th>
+<th>Batches Last</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chocolate chips</td>
+<td>50%</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Butter</td>
+<td>26.66%</td>
+<td>3.75</td>
+</tr>
+<tr>
+<td>Vanilla extract</td>
+<td>13.15%</td>
+<td>7.6</td>
+</tr>
+<tr>
+<td>Flour</td>
+<td>12%</td>
+<td>8.3</td>
+</tr>
+<tr>
+<td>Eggs</td>
+<td>8.33%</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Light brown sugar</td>
+<td>7.5%</td>
+<td>13.3</td>
+</tr>
+<tr>
+<td>Golden caster sugar</td>
+<td>7.5%</td>
+<td>13.3</td>
+</tr>
+<tr>
+<td>Rosemary</td>
+<td>7%</td>
+<td>14.3</td>
+</tr>
+<tr>
+<td>Bicarbonate of soda</td>
+<td>1.25%</td>
+<td>80</td>
+</tr>
+</tbody>
+</table>
+</figure><hr>
+<h2 id="%F0%9F%8E%AF-optimal-shopping-trip-for-24-batches">🎯 Optimal Shopping Trip for 24 Batches</h2>
+<figure class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Ingredient</th>
+<th>Qty (bulk)</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rosemary</td>
+<td>2 packs (1,000g)</td>
+<td>£250.00</td>
+</tr>
+<tr>
+<td>Eggs</td>
+<td>2 cartons (24 eggs)</td>
+<td>£5.40</td>
+</tr>
+<tr>
+<td>Vanilla extract</td>
+<td>4 bottles (152ml)</td>
+<td>£4.60</td>
+</tr>
+<tr>
+<td>Bicarbonate of soda</td>
+<td>1 pack (200g)</td>
+<td>£1.40</td>
+</tr>
+<tr>
+<td>Flour</td>
+<td>3 bags (4,500g)</td>
+<td>£2.34</td>
+</tr>
+<tr>
+<td>Butter</td>
+<td>7 packs (3,150g)</td>
+<td>£7.77</td>
+</tr>
+<tr>
+<td>Light brown sugar</td>
+<td>2 bags (2,000g)</td>
+<td>£7.00</td>
+</tr>
+<tr>
+<td>Golden caster sugar</td>
+<td>2 bags (2,000g)</td>
+<td>£5.20</td>
+</tr>
+<tr>
+<td>Chocolate chips</td>
+<td>12 packs (1,200g)</td>
+<td>£16.80</td>
+</tr>
+</tbody>
+</table>
+</figure><p><strong>Total Shopping Cost: £300.51</strong></p>
+<p><strong>Batches Possible: 24</strong></p>
+<hr>
+<h3 id="%F0%9F%A7%AE-leftovers-after-24-batches">🧮 Leftovers After 24 Batches</h3>
+<figure class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Ingredient</th>
+<th>Leftover Qty</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rosemary</td>
+<td>160g</td>
+<td>£40.00</td>
+</tr>
+<tr>
+<td>Vanilla extract</td>
+<td>32ml</td>
+<td>£0.97</td>
+</tr>
+<tr>
+<td>Butter</td>
+<td>270g</td>
+<td>£0.67</td>
+</tr>
+<tr>
+<td>Bicarbonate of soda</td>
+<td>188g</td>
+<td>£0.98</td>
+</tr>
+<tr>
+<td>Flour</td>
+<td>180g</td>
+<td>£0.09</td>
+</tr>
+<tr>
+<td>Light + Caster sugar</td>
+<td>400g</td>
+<td>£1.20</td>
+</tr>
+</tbody>
+</table>
+</figure><p><strong>Leftover Total Value: £43.93 (13.7%)</strong></p>
+<hr>
+<h3 id="%F0%9F%92%B0-cost-breakdown-per-batch">💰 Cost Breakdown per Batch</h3>
+<figure class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Ingredient</th>
+<th>Cost</th>
+<th>% of Batch Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rosemary</td>
+<td>£8.75</td>
+<td>81.5%</td>
+</tr>
+<tr>
+<td>Chocolate Chips</td>
+<td>£0.70</td>
+<td>6.5%</td>
+</tr>
+<tr>
+<td>Butter</td>
+<td>£0.30</td>
+<td>2.8%</td>
+</tr>
+<tr>
+<td>Light Brown Sugar</td>
+<td>£0.26</td>
+<td>2.4%</td>
+</tr>
+<tr>
+<td>Egg</td>
+<td>£0.26</td>
+<td>2.4%</td>
+</tr>
+<tr>
+<td>Golden Caster Sugar</td>
+<td>£0.20</td>
+<td>1.9%</td>
+</tr>
+<tr>
+<td>Vanilla Extract</td>
+<td>£0.15</td>
+<td>1.4%</td>
+</tr>
+<tr>
+<td>Flour</td>
+<td>£0.09</td>
+<td>0.8%</td>
+</tr>
+<tr>
+<td>Bicarbonate of Soda</td>
+<td>£0.02</td>
+<td>0.2%</td>
+</tr>
+</tbody>
+</table>
+</figure><div class="mermaid pie rendered"><svg aria-labelledby="chart-title-mermaid-1" aria-roledescription="pie" role="graphics-document document" viewBox="0 0 700 450" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif; font-size: 16px; stroke: none; stroke-width: 1px; fill: rgb(238, 238, 238); filter: none; paint-order: normal;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%"><title id="chart-title-mermaid-1">Cost Share Per Batch</title><g></g><g transform="translate(350,225)"><circle class="pieOuterCircle" r="187" cy="0" cx="0" style="stroke: rgb(221, 221, 221); stroke-width: 4px; fill: rgb(19, 19, 19); filter: drop-shadow(rgba(0, 0, 0, 0.4) 0px 4px 4px);"></circle><path class="pieCircle" fill="#a33460" d="M1.1327982892113017e-14,-185A185,185,0,1,1,-169.7846057515365,-73.47235976743444L0,0Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px; fill: rgb(163, 52, 96); filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 3px 4px);"></path><path class="pieCircle" fill="#a8372a" d="M-169.7846057515365,-73.47235976743444A185,185,0,0,1,-126.64121459680733,-134.8591960729612L0,0Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px; fill: rgb(168, 55, 42); filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 3px 4px);"></path><path class="pieCircle" fill="#9e4700" d="M-126.64121459680733,-134.8591960729612A185,185,0,0,1,-101.08295414583975,-154.94268740779626L0,0Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px; fill: rgb(158, 71, 0); filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 3px 4px);"></path><path class="pieCircle" fill="#845c00" d="M-101.08295414583975,-154.94268740779626A185,185,0,0,1,-28.940376032442582,-182.7223430101005L0,0Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px; fill: rgb(132, 92, 0); filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 3px 4px);"></path><path class="pieCircle" fill="#596e00" d="M-28.940376032442582,-182.7223430101005A185,185,0,0,1,1.303290589681841e-13,-185L0,0Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px; fill: rgb(89, 110, 0); filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 3px 4px);"></path><text style="text-anchor: middle; font-size: 17px; filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 2px);" class="slice" transform="translate(86.33383813020619,131.4307075751605)">82%</text><text style="text-anchor: middle; font-size: 17px; filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 2px);" class="slice" transform="translate(-128.65404306508486,-90.41957588380566)">7%</text><text style="text-anchor: middle; font-size: 17px; filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 2px);" class="slice" transform="translate(-97.15842415845502,-123.64385595348335)">3%</text><text style="text-anchor: middle; font-size: 17px; filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 2px);" class="slice" transform="translate(-56.507063521926234,-146.74642848168057)">7%</text><text style="text-anchor: middle; font-size: 17px; filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 2px);" class="slice" transform="translate(-12.337692803203437,-156.7652507295344)">3%</text><text class="pieTitleText" y="-200" x="0" style="font-size: 25px;">Cost Share Per Batch</text><g transform="translate(216,-55)" class="legend"><rect style="fill: rgb(163, 52, 96); stroke: rgb(163, 52, 96);" height="18" width="18"></rect><text y="14" x="22" style="font-size: 17px;">Rosemary</text></g><g transform="translate(216,-33)" class="legend"><rect style="fill: rgb(168, 55, 42); stroke: rgb(168, 55, 42);" height="18" width="18"></rect><text y="14" x="22" style="font-size: 17px;">Choc Chips</text></g><g transform="translate(216,-11)" class="legend"><rect style="fill: rgb(158, 71, 0); stroke: rgb(158, 71, 0);" height="18" width="18"></rect><text y="14" x="22" style="font-size: 17px;">Butter</text></g><g transform="translate(216,11)" class="legend"><rect style="fill: rgb(132, 92, 0); stroke: rgb(132, 92, 0);" height="18" width="18"></rect><text y="14" x="22" style="font-size: 17px;">Sugars + Egg</text></g><g transform="translate(216,33)" class="legend"><rect style="fill: rgb(89, 110, 0); stroke: rgb(89, 110, 0);" height="18" width="18"></rect><text y="14" x="22" style="font-size: 17px;">Vanilla + Flour + Bicarb</text></g></g></svg></div><hr>
 </div> <!---->
 </div>
 </body>
